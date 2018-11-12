@@ -5,26 +5,26 @@ import couchdb
 
 
 #La direccion del servidor
-couch = couchdb.Server("http://127.0.0.1:5984/")
+couch = couchdb.Server("http://127.0.0.1:5984")
 
 #Hace la coneccion local automaticamente 
 #server = Server()
 
 #Referirse a una base de datos ya existente
-db = couch['test']
+#db = couch['test']
 
 #Crear una database
-#db = server.create("test")
+db = couch.create('test_josue')
 
 #Eliminar una database 
-#db = server.delete("test")
+#db = couch.delete("test_josue")
 
 
 #Crear un documento 
 
 #doc = {
 #    '_id': '1',
-#    #'_rev': '1-0000000001',
+#    '_rev': '1-0000000001',
 #    'content': {
 #        'nombre': 'jean',
 #        'apellido': 'soto',
