@@ -5,16 +5,16 @@ import couchdb
 
 
 #La direccion del servidor
-couch = couchdb.Server("http://127.0.0.1:5984")
+#couch = couchdb.Server("http://192.168.1.106:5984")
 
 #Hace la coneccion local automaticamente 
-#server = Server()
+server = Server()
 
 #Referirse a una base de datos ya existente
 #db = couch['test']
 
 #Crear una database
-db = couch.create('test_josue')
+db = server.create('test_para_josue')
 
 #Eliminar una database 
 #db = couch.delete("test_josue")
